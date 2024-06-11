@@ -294,6 +294,10 @@ h1 a {
   width: 100%;
 }
 
+.banner img {
+  width: 100%;
+}
+
 .banner-content {
   position: absolute;
   z-index: 2;
@@ -417,7 +421,7 @@ h1 a {
   color: #000;
   font-size: 8.5px;
   font-weight: 900;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 /*=================================
   counter styling ends here
@@ -425,31 +429,68 @@ h1 a {
 /*=================================
   classes styling starts here
 =================================*/
-.classes .wrapper{
-width: 100%;
+.classes {
+  padding: 56px 0px;
 }
 
-.classes-list{
-  width:90%;
-position: relative;
-display: flex;
-justify-content: space-between;
-/* transform: translateX(-1255px); */
-transition: transform 1s;
-overflow: hidden;
+.classes .wrapper {
+  width: 100%;
 }
 
-
-.classes-list li{
-width: 25%;
-justify-content: space-between;
+.classes-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  transform: translateX(-1252px);
+  transition: transform 1s;
 }
 
-.classes-list figure img{
-/* width: 100%; */
+.classes-list li {
+  width: 25%;
 }
-.classes-list figure{
 
+.common-div {
+  width: 364px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.classes .common-div {
+  margin: 0 21%;
+}
+
+.next-previous {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.next-previous span {
+  display: flex;
+  text-indent: -9999px;
+}
+
+.next-previous span::before {
+  padding-top: 23px;
+  display: flex;
+  color: #fff;
+  font-family: FontAwesome;
+  font-size: 16px;
+  font-weight: 900;
+  text-indent: 0px;
+}
+
+.next-previous-onclick {
+  color: #48d494;
+}
+.previous::before {
+  content: "\3c";
+}
+.next::before {
+  content: "\3e";
 }
 /*=================================
   classes styling ends here
@@ -468,4 +509,5 @@ justify-content: space-between;
 
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {}
+@media only screen and (max-width: 995px) {
+}
