@@ -141,11 +141,11 @@ em {
   font-style: italic;
 }
 
-img {
+/* img {
   width: 100%;
   border: 0;
   vertical-align: middle;
-}
+} */
 
 sub,
 sup {
@@ -422,6 +422,35 @@ h1 a {
 /*=================================
   counter styling ends here
 =================================*/
+/*=================================
+  classes styling starts here
+=================================*/
+.classes .wrapper{
+width: 100%;
+}
+
+.classes-list{
+  width:90%;
+position: relative;
+display: flex;
+justify-content: space-between;
+/* transform: translateX(-1255px); */
+transition: transform 1s;
+overflow: hidden;
+}
+
+
+.classes-list li{
+width: 25%;
+justify-content: space-between;
+}
+
+.classes-list figure img{
+/* width: 100%; */
+}
+.classes-list figure{
+
+}
 /*=================================
   classes styling ends here
 =================================*/
