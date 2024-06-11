@@ -114,12 +114,64 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+.first-letter-caps{
+text-transform: capitalize;
+}
 
+.single-letter-caps::first-letter{
+text-transform: uppercase;
+}
 
+.all-caps{
+  text-transform: uppercase;
+}
 
+header .wrapper{
+  width: 100%;
+  padding:20px 6.5%;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  position: absolute;
+  top: 0%;
+}
 
+header a{
+  color: #f0f8ff;
+}
+.hamburger{
+display: none;
+}
 
+h1 a{
+  font-size:14px ;
+  font-weight: 900;
+}
 
+.nav-list{
+  display: flex;
+  gap: 30px;
+}
+
+.nav-list{
+  font-size:13px ;
+}
+
+.nav-list a{
+padding: 5px 0px;
+}
+
+.header-right a{
+padding: 6px 12px;
+border: .5px solid #48d494;
+border-radius: 3px;
+color: #48d494;
+font-size: 11px;
+}
+
+.nav-list-a-border{
+  border-bottom: 1.5px solid #f0f8ff;
+}
 /*=================================
   Header styling ends here
 =================================*/  
