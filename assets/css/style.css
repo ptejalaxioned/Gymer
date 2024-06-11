@@ -8,13 +8,87 @@
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,22 +98,35 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
 /* Force scrollbar */
-html { overflow-y: scroll; }
+html {
+  overflow-y: scroll;
+}
 
 /* Align radios and text inputs with their label */
 
-input[type='radio'] { vertical-align: text-bottom; }
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
 
 /* Hand cursor on clickable input elements */
 label,
-input[type='button'],
-input[type='submit'],
+input[type="button"],
+input[type="submit"],
 button {
   cursor: pointer;
 }
@@ -50,7 +137,9 @@ strong {
   font-size: inherit;
 }
 
-em { font-style: italic; }
+em {
+  font-style: italic;
+}
 
 img {
   width: 100%;
@@ -66,8 +155,13 @@ sup {
   line-height: 0;
 }
 
-sup { top: -.7em; }
-sub { bottom: -.25em; }
+sup {
+  top: -0.7em;
+}
+
+sub {
+  bottom: -0.25em;
+}
 
 /* 1.2. Clear Fix
    ========================== */
@@ -78,8 +172,9 @@ sub { bottom: -.25em; }
   content: " ";
 }
 
-.cf:after { clear: both; }
-
+.cf:after {
+  clear: both;
+}
 
 /*for all*/
 body {
@@ -87,9 +182,9 @@ body {
   font-family: sans-serif;
 }
 
-a { 
+a {
   display: inline-block;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 li {
@@ -100,9 +195,10 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 86%;
   margin: 0 auto;
 }
+
 *,
 *::before,
 *::after {
@@ -114,68 +210,75 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-.first-letter-caps{
-text-transform: capitalize;
+body {
+  background-color: #000000;
+  color: #f0f8ff8f;
 }
 
-.single-letter-caps::first-letter{
-text-transform: uppercase;
+.first-letter-caps {
+  text-transform: capitalize;
 }
 
-.all-caps{
+.single-letter-caps::first-letter {
   text-transform: uppercase;
 }
 
-header .wrapper{
+.all-caps {
+  text-transform: uppercase;
+}
+
+header .wrapper {
   width: 100%;
-  padding:20px 6.5%;
+  padding: 20px 6.5%;
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
   position: absolute;
   z-index: 4;
   top: 0%;
 }
 
-header a{
+header a {
   color: #f0f8ff;
 }
-.hamburger{
-display: none;
+
+.hamburger {
+  display: none;
 }
 
-h1 a{
-  font-size:14px ;
+h1 a {
+  font-size: 14px;
   font-weight: 900;
 }
 
-.nav-list{
+.nav-list {
   display: flex;
   gap: 30px;
 }
 
-.nav-list{
-  font-size:13px ;
+.nav-list {
+  font-size: 13px;
 }
 
-.nav-list a{
-padding: 5px 0px;
+.nav-list a {
+  padding: 5px 0px;
 }
 
-.header-right a{
-padding: 6px 12px;
-border: .5px solid #48d494;
-border-radius: 3px;
-color: #48d494;
-font-size: 11px;
+.header-right a {
+  padding: 6px 12px;
+  border: 0.5px solid #48d494;
+  border-radius: 3px;
+  color: #48d494;
+  font-size: 11px;
 }
 
-.nav-list-a-border{
+.nav-list-a-border {
   border-bottom: 1.5px solid #f0f8ff;
 }
+
 /*=================================
   Header styling ends here
-=================================*/  
+=================================*/
 
 /*=================================
   main styling starts here
@@ -183,14 +286,15 @@ font-size: 11px;
 /*=================================
   banner styling starts here
 =================================*/
-.banner{
+.banner {
   position: relative;
 }
-.banner .wrapper{
+
+.banner .wrapper {
   width: 100%;
 }
 
-.banner-content{
+.banner-content {
   position: absolute;
   z-index: 2;
   left: 50%;
@@ -199,7 +303,7 @@ font-size: 11px;
   font-size: 75px;
   font-weight: 900;
   text-align: center;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 /*=================================
   banner styling ends here
@@ -207,56 +311,129 @@ font-size: 11px;
 /*=================================
   counter styling starts here
 =================================*/
-/*=================================
-  counter styling ends here
-=================================*/
+.counter {
+  padding: 56px 0px;
+}
 
-/* f21e  heart
-e2e5 banana
-f206 cycle
-f44b bumble
-*/
-.counter .wrapper
-{
+.counter .wrapper {
   width: 58%;
   display: flex;
   flex-direction: column;
+  gap: 70px;
 }
-.counter-list{
-  display:flex;
+
+.counter-list {
+  display: flex;
   justify-content: space-between;
 }
 
-.counter-list li{
-  width: 20%;
-  display:flex;
+.counter-list li {
+  display: flex;
+  align-items: end;
+  gap: 15px;
 }
 
-.counter-list span:nth-child(0){
-color: #48d494;
+.counter-list span:nth-child(0) {
+  color: #48d494;
 }
+
+.icon {
+  display: flex;
+  text-indent: -9999px;
+}
+
+.icon::before {
+  padding-bottom: 6px;
+  display: flex;
+  color: #48d495bd;
+  font-size: 31px;
+  font-family: FontAwesome;
+  text-indent: 0px;
+}
+
+.members::before {
+  content: "\f44b";
+}
+
+.visitors::before {
+  content: "\f206";
+}
+
+.health::before {
+  content: "\f5d1";
+}
+
+.heart::before {
+  content: "\f21e";
+}
+
+.count {
+  display: flex;
+  flex-direction: column;
+}
+
+.count-up {
+  color: #f0f8ff;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.count-down {
+  font-size: 11px;
+}
+
+.counter-down {
+  display: flex;
+  justify-content: space-between;
+}
+
+.counter-left {
+  width: 40%;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.counter-right img {
+  box-shadow: 7px 7px #48d494;
+}
+
+.common-heading {
+  color: #48d494;
+  font-size: 33px;
+  font-weight: 900;
+}
+
+.common-para {
+  font-size: 12px;
+  line-height: 21px;
+}
+
+.counter-left a {
+  padding: 13px 16px;
+  border-radius: 3px;
+  background-color: #48d494;
+  color: #000;
+  font-size: 8.5px;
+  font-weight: 900;
+  letter-spacing: .5px;
+}
+/*=================================
+  counter styling ends here
+=================================*/
 /*=================================
   main styling ends here
 =================================*/
 
 /*=================================
   footer styling starts here
-=================================*/ 
+=================================*/
 
-
-
-
-
-
-
- /*=================================
+/*=================================
   footer styling ends here
-=================================*/ 
+=================================*/
 
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
+@media only screen and (max-width: 995px) {}
