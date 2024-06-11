@@ -186,10 +186,10 @@ font-size: 11px;
 .banner{
   position: relative;
 }
-
 .banner .wrapper{
   width: 100%;
 }
+
 .banner-content{
   position: absolute;
   z-index: 2;
@@ -204,13 +204,37 @@ font-size: 11px;
 /*=================================
   banner styling ends here
 =================================*/
+/*=================================
+  counter styling starts here
+=================================*/
+/*=================================
+  counter styling ends here
+=================================*/
 
+/* f21e  heart
+e2e5 banana
+f206 cycle
+f44b bumble
+*/
+.counter .wrapper
+{
+  width: 58%;
+  display: flex;
+  flex-direction: column;
+}
+.counter-list{
+  display:flex;
+  justify-content: space-between;
+}
 
+.counter-list li{
+  width: 20%;
+  display:flex;
+}
 
-
-
-
-
+.counter-list span:nth-child(0){
+color: #48d494;
+}
 /*=================================
   main styling ends here
 =================================*/
