@@ -795,11 +795,12 @@ footer p {
     transform: translateX(-1089px);
   }
   .classes .common-div {
-    margin-left: 19%;
+    margin-left: 18.5%;
   }
   .counter-left {
     width: 48%;
   }
+
 }
 
 /*media query starts*/
@@ -810,6 +811,29 @@ footer p {
 }
 
 }
+
+/*media query starts*/
+/*media query for 995px starts here*/
+@media only screen and (max-width: 1280px) {
+  .classes-list {
+    transform: translateX(-1248px);
+}
+
+.wrapper {
+  width: 80%;
+}
+.classes-list {
+transform: translateX(-1085px);
+}
+.classes .common-div {
+  margin-left: 10%;
+}
+
+.contact .wrapper {
+  width: 43%;
+}
+}
+
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
