@@ -232,16 +232,20 @@ body {
 .all-caps {
   text-transform: uppercase;
 }
+header {
+  padding: 20px 0;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  z-index: 4;
+}
 
 header .wrapper {
-  width: 100%;
-  padding: 20px 6.5%;
+  width: 87%;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: absolute;
-  z-index: 4;
-  top: 0%;
 }
 
 header a {
@@ -334,6 +338,7 @@ h1 a {
 .counter-list {
   display: flex;
   justify-content: space-between;
+  /* gap: 65px; */
 }
 
 .counter-list li {
@@ -465,7 +470,7 @@ h1 a {
 }
 
 .classes .common-div {
-  margin: 0 21%;
+  margin-left: 21%;
 }
 
 .next-previous {
@@ -782,12 +787,29 @@ footer p {
 
 /*media query starts*/
 /*media query for 995px starts here*/
+@media only screen and (max-width: 1440px) {
+  .wrapper {
+    width: 63%;
+  }
+  .classes-list {
+    transform: translateX(-1089px);
+  }
+  .classes .common-div {
+    margin-left: 19%;
+  }
+  .counter-left {
+    width: 48%;
+  }
+}
+
+/*media query starts*/
+/*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
   /*=================================
   Header styling starts here
 =================================*/
   .hamburger {
-    padding-top: 0px;
+    padding-top: 0;
     display: flex;
     position: relative;
   }
@@ -829,14 +851,10 @@ footer p {
     border-bottom: 3px solid var(--secondary-color);
     border-radius: 2px;
     display: inline-block;
-    -webkit-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    transform: translateY(-5px);
   }
   .nav-list {
     display: none;
   }
-
   h1 a {
     padding-right: 693px;
   }
@@ -859,6 +877,7 @@ footer p {
     gap: 20px;
     text-align: center;
   }
+
   .nav-list a {
     color: #48d494;
   }
@@ -886,7 +905,6 @@ footer p {
   /*=================================
   counter styling starts here
 =================================*/
-
   .counter-left {
     width: 44%;
   }
