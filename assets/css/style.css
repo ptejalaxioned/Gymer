@@ -210,9 +210,15 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+:root {
+  --primary-color: #000;
+  --secondary-color: #f0f8ff8f;
+  --tertiary-color: #48d494;
+}
+
 body {
-  background-color: #000000;
-  color: #f0f8ff8f;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .first-letter-caps {
@@ -266,9 +272,9 @@ h1 a {
 
 .header-right a {
   padding: 6px 12px;
-  border: 0.5px solid #48d494;
+  border: 0.5px solid var(--tertiary-color);
   border-radius: 3px;
-  color: #48d494;
+  color: var(--tertiary-color);
   font-size: 11px;
 }
 
@@ -338,7 +344,7 @@ h1 a {
 }
 
 .counter-list span:nth-child(0) {
-  color: #48d494;
+  color: var(--tertiary-color);
 }
 
 .icon {
@@ -349,7 +355,7 @@ h1 a {
 .icon::before {
   padding-bottom: 6px;
   display: flex;
-  color: #48d495bd;
+  color: #1e905c;
   font-size: 31px;
   font-family: FontAwesome;
   text-indent: 0px;
@@ -400,12 +406,12 @@ h1 a {
 }
 
 .counter-right img {
-  box-shadow: 7px 7px #48d494;
+  box-shadow: 7px 7px var(--tertiary-color);
 }
 
 .common-heading {
   padding-right: 20px;
-  color: #48d494;
+  color: var(--tertiary-color);
   font-size: 33px;
   font-weight: 900;
 }
@@ -418,8 +424,8 @@ h1 a {
 .counter-left a {
   padding: 13px 16px;
   border-radius: 3px;
-  background-color: #48d494;
-  color: #000;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
   font-size: 8.5px;
   font-weight: 900;
   letter-spacing: 0.5px;
@@ -485,7 +491,7 @@ h1 a {
 }
 
 .next-previous-onclick {
-  color: #48d494;
+  color: var(--tertiary-color);
 }
 .previous::before {
   content: "\3c";
@@ -513,12 +519,12 @@ h1 a {
 .days-list a {
   padding: 11px 13px;
   border-radius: 3px;
-  color: #48d494;
+  color: var(--tertiary-color);
   font-size: 12px;
 }
 
 .day-onclick {
-  background-color: #48d494;
+  background-color: var(--tertiary-color);
   color: #f0f8ff;
 }
 
@@ -564,7 +570,7 @@ h1 a {
 
 .join-button {
   width: 18%;
-  color: #48d494;
+  color: var(--tertiary-color);
   text-align: center;
 }
 /*=================================
@@ -587,7 +593,7 @@ h1 a {
   padding: 35px 35px;
   display: flex;
   flex-direction: column;
-  background-color: #48d494;
+  background-color: var(--tertiary-color);
   color: #f0f8ff;
 }
 
@@ -668,8 +674,8 @@ form {
   padding: 13px 68px;
   border: none;
   border-radius: 3px;
-  background-color: #48d494;
-  color: #000;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
   font-size: 8.5px;
   font-weight: 900;
   letter-spacing: 0.5px;
@@ -687,84 +693,89 @@ form {
 /*=================================
   footer styling starts here
 =================================*/
-footer{
+footer {
   padding: 80px 0;
 }
 
-footer .wrapper{
-display: flex;
-flex-direction: column;
-gap: 110px;
-}
-
-.footer-up{
+footer .wrapper {
   display: flex;
-justify-content: space-between;
+  flex-direction: column;
+  gap: 110px;
 }
 
-footer h5{
+.footer-up {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer h5 {
+  margin-bottom: 15px;
+  color: aliceblue;
   font-size: 10px;
   font-weight: 900;
-  color: aliceblue;
   letter-spacing: 1px;
-  margin-bottom: 15px;
 }
 
-footer p{font-size: 11px;
-    line-height: 20px;
+footer p {
+  font-size: 11px;
+  line-height: 20px;
 }
 
-.footer-left,.footer-center,.footer-right{
-width: 33.3%;
+.footer-left,
+.footer-center,
+.footer-right {
+  width: 33.3%;
 }
-.footer-center{
-padding-left: 58px;
+.footer-center {
+  padding-left: 58px;
 }
 
-.links{
+.links {
   padding-left: 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.links a{
+.links a {
+  color: var(--tertiary-color);
   font-size: 12px;
-  color:#48d494;
 }
 
-.subscribe-email{
+.subscribe-email {
   margin-top: 10px;
   display: flex;
 }
-.email-button input{
+
+.email-button input {
   padding: 8px;
   background-color: transparent;
   border: 1.5px solid aliceblue;
+  border-right: none;
   font-size: 11px;
 }
 
-.subscribe-email button{
+.subscribe-email button {
   padding: 8.5px;
   border: none;
-  border-bottom-right-radius:1px ;
-  border-top-right-radius:1px ;
-  background-color: #48d494;
-  color: #000;
+  border-bottom-right-radius: 1px;
+  border-top-right-radius: 1px;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
   font-size: 8px;
   font-weight: bolder;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
-.footer-down span{
+.footer-down span {
   padding: 15px;
   display: flex;
   justify-content: center;
   font-size: 12px;
 }
 
-.footer-down a{
-  color: #48d494;
+.footer-down a {
+  color: var(--tertiary-color);
 }
 /*=================================
   footer styling ends here
@@ -772,5 +783,63 @@ padding-left: 58px;
 
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+@media only screen and (min-width: 995px) {
+  .header-right a:hover {
+    background-color: #48d494;
+    color: #f0f8ff;
+    cursor: pointer;
+    transition: all 1s;
+  }
+
+  .nav-list a:hover {
+    border-bottom: 1.5px solid #f0f8ff;
+    cursor: pointer;
+    transition: all 1s;
+  }
+
+  .counter-left a:hover {
+    background-color: #f0f8ff;
+    color: #48d494;
+    cursor: pointer;
+    transition: all 1s;
+  }
+  .next-previous span:hover::before {
+    color: #48d494;
+    cursor: pointer;
+    transition: all 1s;
+  }
+
+  .days-list a:hover {
+    background-color: var(--tertiary-color);
+    color: #f0f8ff;
+  }
+  .join-button:hover {
+    color: aliceblue;
+  }
+
+  .send-button button:hover {
+    background-color: #f0f8ff;
+    color: #48d494;
+    cursor: pointer;
+    transition: all 1s;
+  }
+
+  .subscribe-email button:hover {
+    background-color: #f0f8ff;
+    color: #48d494;
+    cursor: pointer;
+    transition: all 1s;
+  }
+
+  .links a:hover {
+    color: #f0f8ff;
+    cursor: pointer;
+    transition: all 1s;
+  }
+
+  .footer-down a:hover {
+    color: #f0f8ff;
+    cursor: pointer;
+    transition: all 1s;
+  }
 }
