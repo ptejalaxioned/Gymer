@@ -573,7 +573,7 @@ h1 a {
   services styling starts here
 =================================*/
 .services {
-  padding: 56px 0;
+  padding: 60px 0 67px;
 }
 
 .service-list {
@@ -616,7 +616,7 @@ h1 a {
 .gym::before {
   content: "\f496";
 }
-.service-list h4{
+.service-list h4 {
   padding: 20px 0 13px;
 }
 /*=================================
@@ -625,44 +625,45 @@ h1 a {
 /*=================================
   contact styling starts here
 =================================*/
-.contact{
-  padding: 56px 0;
-background-color: #121212;
+.contact {
+  padding: 60px 0 67px;
+  background-color: #121212;
 }
 
-.contact .wrapper{
-width: 35%;
+.contact .wrapper {
+  width: 35%;
 }
 
-.name{
+.name {
   display: flex;
   justify-content: space-between;
 }
 
-.name  div{
-width: 47.9%;
+.name div {
+  width: 47.9%;
 }
 
-.contact input,.contact textarea{
+.contact input,
+.contact textarea {
   width: 100%;
   padding: 8px;
   border: 1.5px solid aliceblue;
-  background-color:transparent;
+  background-color: transparent;
   font-size: 11px;
 }
 
-.contact textarea{
-height: 169px;
-resize: none;
+.contact textarea {
+  height: 169px;
+  resize: none;
 }
 
-form{
-display: flex;
-flex-direction: column;
-gap: 12px;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.send-button button{
+.send-button button {
   padding: 13px 68px;
   border: none;
   border-radius: 3px;
@@ -672,14 +673,12 @@ gap: 12px;
   font-weight: 900;
   letter-spacing: 0.5px;
 }
-.contact p{
-padding: 12px 0 28px;
+.contact p {
+  padding: 12px 0 28px;
 }
 /*=================================
   contact styling ends here
 =================================*/
-
-
 /*=================================
   main styling ends here
 =================================*/
@@ -687,7 +686,85 @@ padding: 12px 0 28px;
 /*=================================
   footer styling starts here
 =================================*/
+footer{
+  padding: 80px 0;
+}
 
+footer .wrapper{
+display: flex;
+flex-direction: column;
+gap: 110px;
+}
+
+.footer-up{
+  display: flex;
+justify-content: space-between;
+}
+
+footer h5{
+  font-size: 10px;
+  font-weight: 900;
+  color: aliceblue;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+footer p{font-size: 11px;
+    line-height: 20px;
+}
+
+.footer-left,.footer-center,.footer-right{
+width: 33.3%;
+}
+.footer-center{
+padding-left: 58px;
+}
+
+.links{
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.links a{
+  font-size: 12px;
+  color:#48d494;
+}
+
+.subscribe-email{
+  margin-top: 10px;
+  display: flex;
+}
+.email-button input{
+  padding: 8px;
+  background-color: transparent;
+  border: 1.5px solid aliceblue;
+  font-size: 11px;
+}
+
+.subscribe-email button{
+  padding: 8.5px;
+  border: none;
+  border-bottom-right-radius:1px ;
+  border-top-right-radius:1px ;
+  background-color: #48d494;
+  color: #000;
+  font-size: 8px;
+  font-weight: bolder;
+  letter-spacing: .5px;
+}
+
+.footer-down span{
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.footer-down a{
+  color: #48d494;
+}
 /*=================================
   footer styling ends here
 =================================*/
