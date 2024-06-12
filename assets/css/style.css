@@ -783,6 +783,61 @@ footer p {
 
 /*media query starts*/
 /*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+  .hamburger {
+    padding-top: 0px;
+    display: flex;
+    position: relative;
+  }
+
+  .hamburger {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .line {
+    display: flex;
+    line-height: 4px;
+    text-indent: -9999px;
+    content: "";
+    width: 25px;
+  }
+
+  .hamburger:hover .line2{
+    display: none;
+    transition: all 1s;
+  }
+
+  .hamburger:hover .line1{
+    transform: rotate(-45deg) translateX(5px);
+    transition: transform 1s;
+  }
+
+  .hamburger:hover .line3{
+   transform: rotate(45deg) translateX(-5px);
+    transition: transform 1s;
+  }
+
+  .line::before {
+    content: "";
+    width: 17px;
+    border-bottom: 3px solid var(--secondary-color);
+    border-radius: 2px;
+    display: inline-block;
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  .nav-list {
+display: none;
+  }
+}
+
+/*media query starts*/
+/*media query for 995px starts here*/
 @media only screen and (min-width: 995px) {
   .header-right a:hover {
     background-color: #48d494;
