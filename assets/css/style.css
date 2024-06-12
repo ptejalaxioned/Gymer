@@ -804,6 +804,14 @@ footer p {
 
 /*media query starts*/
 /*media query for 995px starts here*/
+@media only screen and (max-width: 1280px) {
+  .classes-list {
+    transform: translateX(-1248px);
+}
+
+}
+/*media query starts*/
+/*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
   /*=================================
   Header styling starts here
