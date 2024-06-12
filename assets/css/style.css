@@ -326,7 +326,6 @@ h1 a {
 }
 
 .counter .wrapper {
-  width: 58%;
   display: flex;
   flex-direction: column;
   gap: 70px;
@@ -784,6 +783,9 @@ footer p {
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+  /*=================================
+  Header styling starts here
+=================================*/
   .hamburger {
     padding-top: 0px;
     display: flex;
@@ -806,18 +808,18 @@ footer p {
     width: 25px;
   }
 
-  .hamburger:hover .line2{
+  .hamburger:hover .line2 {
     display: none;
     transition: all 1s;
   }
 
-  .hamburger:hover .line1{
+  .hamburger:hover .line1 {
     transform: rotate(-45deg) translateX(5px);
     transition: transform 1s;
   }
 
-  .hamburger:hover .line3{
-   transform: rotate(45deg) translateX(-5px);
+  .hamburger:hover .line3 {
+    transform: rotate(45deg) translateX(-5px);
     transition: transform 1s;
   }
 
@@ -832,10 +834,78 @@ footer p {
     transform: translateY(-5px);
   }
   .nav-list {
-display: none;
+    display: none;
   }
-}
 
+  h1 a {
+    padding-right: 693px;
+  }
+  header .wrapper {
+    padding: 20px 3%;
+  }
+
+  .nav-list {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    right: 0%;
+    background-color: #000;
+    font-size: 15px;
+    gap: 20px;
+    text-align: center;
+  }
+  .nav-list a {
+    color: #48d494;
+  }
+  .nav-list a:hover {
+    color: #f0f8ff;
+    cursor: pointer;
+    transition: all 1s;
+  }
+  /*=================================
+  Header styling ends here
+=================================*/
+  /*=================================
+  banner styling starts here
+=================================*/
+  .banner-content {
+    font-size: 50px;
+  }
+
+  .wrapper {
+    width: 80%;
+  }
+  /*=================================
+  banner styling ends here
+=================================*/
+  /*=================================
+  counter styling starts here
+=================================*/
+
+  .counter-left {
+    width: 44%;
+  }
+  /*=================================
+  counter styling ends here
+=================================*/
+  /*=================================
+  classes styling starts here
+=================================*/
+  .classes-list {
+    transform: translateX(-918px);
+  }
+  .classes-list img {
+    width: 239px;
+  }
+  /*=================================
+  classes styling ends here
+=================================*/
+}
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (min-width: 995px) {
