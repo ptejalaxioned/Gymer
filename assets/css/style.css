@@ -453,12 +453,8 @@ h1 a {
   display: flex;
   justify-content: space-between;
   position: relative;
-  transform: translateX(-1252px);
+  transform: translateX(-1251px);
   transition: transform 1s;
-}
-
-.classes-list li {
-  width: 25%;
 }
 
 .common-div {
@@ -792,7 +788,7 @@ footer p {
     width: 63%;
   }
   .classes-list {
-    transform: translateX(-1089px);
+    transform: translateX(-1251px);
   }
   .classes .common-div {
     margin-left: 18.5%;
@@ -800,7 +796,6 @@ footer p {
   .counter-left {
     width: 48%;
   }
-
 }
 
 /*media query starts*/
@@ -809,29 +804,25 @@ footer p {
   .classes-list {
     transform: translateX(-1248px);
 }
-
 }
 
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1024px) {
   .classes-list {
-    transform: translateX(-1248px);
+    transform: translateX(-1505px);
 }
+  .wrapper {
+    width: 80%;
+  }
+  
+  .classes .common-div {
+    margin-left: 10%;
+  }
 
-.wrapper {
-  width: 80%;
-}
-.classes-list {
-transform: translateX(-1085px);
-}
-.classes .common-div {
-  margin-left: 10%;
-}
-
-.contact .wrapper {
-  width: 43%;
-}
+  .contact .wrapper {
+    width: 43%;
+  }
 }
 
 /*media query starts*/
@@ -852,6 +843,7 @@ transform: translateX(-1085px);
     justify-content: center;
     flex-direction: column;
     gap: 3px;
+    transform: translateY(-6px);
   }
 
   .line {
@@ -868,12 +860,12 @@ transform: translateX(-1085px);
   }
 
   .hamburger:hover .line1 {
-    transform: rotate(-45deg) translateX(5px);
+    transform: rotate(-45deg) translateX(0px);
     transition: transform 1s;
   }
 
   .hamburger:hover .line3 {
-    transform: rotate(45deg) translateX(-5px);
+    transform: rotate(45deg) translateX(0px);
     transition: transform 1s;
   }
 
@@ -888,10 +880,7 @@ transform: translateX(-1085px);
     display: none;
   }
   h1 a {
-    padding-right: 693px;
-  }
-  header .wrapper {
-    padding: 20px 3%;
+    padding-right: 745px;
   }
 
   .nav-list {
@@ -917,6 +906,10 @@ transform: translateX(-1085px);
     color: #f0f8ff;
     cursor: pointer;
     transition: all 1s;
+  }
+
+  header .wrapper {
+    width: 94%;
   }
   /*=================================
   Header styling ends here
@@ -956,9 +949,81 @@ transform: translateX(-1085px);
   classes styling ends here
 =================================*/
 }
+
+/*media query starts*/
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+  h1 a {
+    padding-right: 517px;
+}
+
+.contact .wrapper {
+  width: 56%;
+}
+
+footer .wrapper {
+  gap: 61px;
+}
+
+.classes-list {
+  transform: translateX(-1144px);
+}
+
+
+.footer-center {
+  padding-left: 42px;
+}
+.counter-right img {
+  width: 100%;
+}
+.counter-right {
+  width: 50%;
+}
+}
+/*media query starts*/
+/*media query for 768px starts here*/
+@media only screen and (max-width: 640px) {
+  h1 a {
+    padding-right: 426px;
+}
+.classes-list {
+  transform: translateX(-1273px);
+}
+
+.wrapper{
+  width: 90%;
+}
+.contact,.services ,.schedule ,.classes {
+  padding: 38px 0 55px;
+}
+
+
+.footer-center {
+  padding-left: 0;
+}
+
+.footer-up{
+  width: 100%;
+}
+.footer-center{
+  width: 20%;
+}
+
+.email-button input {
+  width: 100%;
+}
+
+footer {
+  padding: 50px 0 30px;
+}
+footer .wrapper {
+  gap: 31px;
+}
+}
+
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (min-width: 995px) {
+@media only screen and (min-width: 996px) {
   .header-right a:hover {
     background-color: #48d494;
     color: #f0f8ff;
