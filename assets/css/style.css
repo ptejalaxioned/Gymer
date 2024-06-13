@@ -1192,7 +1192,7 @@ footer p {
   }
 
   .service-list li {
-    width: 62%;
+    width: 90%;
     margin: auto;
   }
 
@@ -1217,7 +1217,7 @@ footer p {
   .footer-left,
   .footer-center,
   .footer-right {
-    width: 60%;
+    width: 80%;
     margin: auto;
     text-align: center;
   }
@@ -1229,6 +1229,14 @@ footer p {
 
     display: inline;
   }
+
+  .subscribe-email {
+    justify-content: center;
+}
+
+footer p {
+  padding: 0 35px;
+}
 }
 
 /*media query for 375px starts here*/
@@ -1289,6 +1297,44 @@ text-align: center;
 }
 .footer-down span {
   padding: 0;
+}
+}
+
+/*media query for 320px starts here*/
+@media only screen and (max-width: 320px) {
+h1 a {
+  padding-right: 134px;
+}
+.classes-list {
+  transform: translateX(-2242px);
+}
+
+.common-div {
+  width: 290px;
+}
+
+.previous::before {
+  left: 8%;
+}
+
+.next::before {
+  right: 0%;
+}
+
+.next-previous span::before {
+  top: 65%;
+}
+
+.classes-list img {
+  width: 220px;
+  margin: 0 50.1px;
+}
+.next-previous span::before {
+  top: 63%;
+}
+.counter-list li {
+  width: 59%;
+  gap: 12px;
 }
 }
 /*media query starts*/
