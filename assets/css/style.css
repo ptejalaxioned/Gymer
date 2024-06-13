@@ -1188,6 +1188,7 @@ footer p {
   }
   .days-list {
     margin-bottom: 11px;
+    flex-wrap: wrap;
   }
 
   .service-list li {
@@ -1220,12 +1221,76 @@ footer p {
     margin: auto;
     text-align: center;
   }
-  
+
   footer .wrapper {
-    gap: 16px;
+    gap: 26px;
+}
+  .footer-down span {
+
+    display: inline;
   }
 }
 
+/*media query for 375px starts here*/
+@media only screen and (max-width: 375px) {
+  .next-previous span::before {
+    width: 30px;
+    height: 30px;
+    padding: 3px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .counter-list li {
+    width: 51%;
+    gap: 12px;
+}
+
+.classes-list {
+  transform: translateX(-2626.5px);
+}
+.classes-list img {
+  margin: 0 23px;
+}
+h1 a {
+  padding-right: 200px;
+}
+.wrapper {
+  width: 85%;
+}
+.common-div {
+  width: 304px;
+}
+
+.classes-list img {
+  width: 290px;
+  margin: 0 42.5px;
+}
+
+.next::before {
+  right: -1%;
+}
+.previous::before {
+  left: 6%;
+}
+
+.schedule .wrapper {
+  width: 90%;
+}
+
+.schedule .common-div {
+  padding-bottom: 10px;
+  margin: auto;
+}
+
+.footer-down{
+text-align: center;
+}
+.footer-down span {
+  padding: 0;
+}
+}
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (min-width: 996px) {
