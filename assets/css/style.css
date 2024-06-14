@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @charset "utf-8";
 /* ==========================================================================
    1. CSS Reset Code
@@ -178,7 +185,8 @@ sub {
 
 /*for all*/
 body {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: sans-serif;
 }
 
@@ -204,7 +212,8 @@ li {
 *::after {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*=================================
@@ -238,9 +247,15 @@ header .wrapper {
 }
 
 .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header a { color: var(--secondary-color); }
@@ -252,6 +267,8 @@ h1 a {
 }
 
 .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
@@ -291,7 +308,9 @@ h1 a {
   font-size: 75px;
   font-weight: 900;
   text-align: center;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 /*=================================
   banner styling ends here
@@ -302,31 +321,48 @@ h1 a {
 .counter { padding: 56px 0px; }
 
 .counter .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 70px;
 }
 
 .counter-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .counter-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   gap: 15px;
 }
 
 .counter-list span:nth-child(0) { color:var(--primary-color); }
 
 .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-indent: -9999px;
 }
 
 .icon::before {
   padding-bottom: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #1e905c;
   font-size: 31px;
@@ -340,33 +376,49 @@ h1 a {
 .heart::before { content: "\f21e"; }
 
 .count {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .count-up {
   color: var(--secondary-color);
   font-size: 30px;
   font-weight: 600;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
 }
 
 .count-down { font-size: 11px; }
 
 .counter-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .counter-left {
   width: 40%;
   padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 20px;
 }
 
-.counter-right img { box-shadow: 7px 7px var(--primary-color) }
+.counter-right img { -webkit-box-shadow: 7px 7px var(--primary-color); box-shadow: 7px 7px var(--primary-color) }
 
 .common-heading {
   padding-right: 20px;
@@ -400,36 +452,59 @@ h1 a {
 
 .classes-list {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
-  transform: translateX(-1251px);
+  -webkit-transform: translateX(-1251px);
+      -ms-transform: translateX(-1251px);
+          transform: translateX(-1251px);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .common-div {
   width: 363px;
   padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 17px;
 }
 
 .classes .common-div { margin-left: 21%; }
 
 .next-previous {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 10px;
 }
 
 .next-previous span {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-indent: -9999px;
 }
 
 .next-previous span::before {
   padding-top: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #fff;
   font-family: FontAwesome;
@@ -441,7 +516,7 @@ h1 a {
 .next-previous-onclick { color: var(--primary-color);}
 .previous::before { content: "\3c"; }
 .next::before { content: "\3e"; }
-.classes-list-onclick{ transform: translateX(0px); }
+.classes-list-onclick{ -webkit-transform: translateX(0px); -ms-transform: translateX(0px); transform: translateX(0px); }
 .previous-disable{ visibility: hidden; }
 .next-disable{ visibility: hidden; }
 /*=================================
@@ -455,8 +530,12 @@ h1 a {
 .days-list {
   margin: auto;
   margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .days-list a {
@@ -472,14 +551,21 @@ h1 a {
 }
 
 .time-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .time-table li {
   border: 0.5px solid #f0f8ffbd;
   border-left: none;
   border-top: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -521,15 +607,24 @@ h1 a {
 .services { padding: 60px 0 67px; }
 
 .service-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .service-list li {
   width: 31.5%;
   padding: 35px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color:var(--primary-color);
   color: var(--secondary-color);
 }
@@ -540,11 +635,15 @@ h1 a {
 }
 
 .service-list span {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-indent: -9999px;
 }
 
 .service-list span::before {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-family: "FontAwesome";
   font-size: 40px;
@@ -569,8 +668,12 @@ h1 a {
 .contact .wrapper { width: 35%; }
 
 .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .name div { width: 47.9%; }
@@ -590,8 +693,13 @@ h1 a {
 }
 
 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 12px;
 }
 
@@ -612,6 +720,13 @@ form {
   border: 1.5px solid #ff0000;
   border-radius: 2px;
 }
+
+.div-span {
+  color: #ff0000;
+  font-size: 10px;
+}
+
+input,textarea{ color: #f0f8ffbd; }
 /*=================================
   contact styling ends here
 =================================*/
@@ -625,14 +740,23 @@ form {
 footer { padding: 80px 0; }
 
 footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 110px;
 }
 
 .footer-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer h5 {
@@ -656,8 +780,13 @@ footer p {
 
 .links {
   padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 10px;
 }
 
@@ -668,6 +797,8 @@ footer p {
 
 .subscribe-email {
   margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -693,8 +824,12 @@ footer p {
 
 .footer-down span {
   padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 12px;
 }
 
@@ -708,7 +843,7 @@ footer p {
 @media only screen and (max-width: 1440px) {
 
   .wrapper { width: 63%; }
-  .classes-list { transform: translateX(-1251px); }
+  .classes-list { -webkit-transform: translateX(-1251px); -ms-transform: translateX(-1251px); transform: translateX(-1251px); }
   .classes .common-div { margin-left: 18.5%; }
   .counter-left { width: 48%; }
 
@@ -717,14 +852,14 @@ footer p {
 /*media query for 1280px starts here*/
 @media only screen and (max-width: 1280px) {
 
-  .classes-list { transform: translateX(-1248px); }
+  .classes-list { -webkit-transform: translateX(-1248px); -ms-transform: translateX(-1248px); transform: translateX(-1248px); }
 
 }
 
 /*media query for 1024px starts here*/
 @media only screen and (max-width: 1024px) {
 
-  .classes-list { transform: translateX(-1505px); }
+  .classes-list { -webkit-transform: translateX(-1505px); -ms-transform: translateX(-1505px); transform: translateX(-1505px); }
   .wrapper { width: 80%; }
   .classes .common-div { margin-left: 10%; }
   .contact .wrapper { width: 43%; }
@@ -738,21 +873,34 @@ footer p {
 =================================*/
   .hamburger {
     padding-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
   }
 
   .hamburger {
     padding-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 3px;
-    transform: translateY(-6px);
+    -webkit-transform: translateY(-6px);
+        -ms-transform: translateY(-6px);
+            transform: translateY(-6px);
   }
 
   .line {
     width: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     line-height: 4px;
     text-indent: -9999px;
@@ -760,17 +908,31 @@ footer p {
 
   .line2-onclick {
     display: none;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
   }
 
   .line1-onclick {
-    transform: rotate(-45deg) translateX(-2px);
+    -webkit-transform: rotate(-45deg) translateX(-2px);
+        -ms-transform: rotate(-45deg) translateX(-2px);
+            transform: rotate(-45deg) translateX(-2px);
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
     transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
   }
 
   .line3-onclick{
-    transform: rotate(45deg) translateX(0px);
+    -webkit-transform: rotate(45deg) translateX(0px);
+        -ms-transform: rotate(45deg) translateX(0px);
+            transform: rotate(45deg) translateX(0px);
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
     transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
   }
 
   .line::before {
@@ -784,9 +946,16 @@ footer p {
   .nav-list{
     width: 100%;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: absolute;
     z-index: 10;
     top: 100%;
@@ -795,12 +964,20 @@ footer p {
     font-size: 15px;
     gap: 20px;
     text-align: center;
-    transform: translateX(-1000px);
+    -webkit-transform: translateX(-1000px);
+        -ms-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
   }
 
   .nav-list-onclick{
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
   }
 
@@ -809,17 +986,23 @@ footer p {
   .nav-list-a-onclick{
     color: var(--secondary-color);
     cursor: pointer;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
   }
 
   header .wrapper {
     width: 94%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
   .header-content {
     width: 100%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .body-onclick { overflow: hidden;}
@@ -844,7 +1027,7 @@ footer p {
   /*=================================
   classes styling starts here
 =================================*/
-  .classes-list { transform: translateX(-918px); }
+  .classes-list { -webkit-transform: translateX(-918px); -ms-transform: translateX(-918px); transform: translateX(-918px); }
   .classes-list img { width: 239px; }
   /*=================================
   classes styling ends here
@@ -871,7 +1054,7 @@ footer p {
 /*=================================
   classes styling starts here
 =================================*/
-.classes-list { transform: translateX(-1144px); }
+.classes-list { -webkit-transform: translateX(-1144px); -ms-transform: translateX(-1144px); transform: translateX(-1144px); }
 /*=================================
 footer styling starts here
 =================================*/
@@ -888,7 +1071,7 @@ footer .wrapper { gap: 61px; }
   classes styling starts here
 =================================*/
 .wrapper { width: 90%; }
-.classes-list { transform: translateX(-1273px); }
+.classes-list { -webkit-transform: translateX(-1273px); -ms-transform: translateX(-1273px); transform: translateX(-1273px); }
 
 .contact,
 .services,
@@ -925,7 +1108,8 @@ footer .wrapper { gap: 31px; }
 
 .banner img {
   height: 94vh;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*=================================
   banner styling ends here
@@ -934,13 +1118,18 @@ footer .wrapper { gap: 31px; }
   service styling starts here
 =================================*/
 .service-list {
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 19px;
   text-align: center;
 }
 
-.service-list span { justify-content: center; }
+.service-list span { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 .service-list li { width: 90%; }
 
 .service-list li {
@@ -959,13 +1148,21 @@ footer .wrapper { gap: 31px; }
 .counter-left p { margin-bottom: 10px; }
 
 .counter-down {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 35px;
 }
 
 .counter-list {
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 25px;
 }
 
@@ -1003,7 +1200,7 @@ footer .wrapper { gap: 31px; }
   margin: 0 80.2px;
 }
 
-.classes-list { transform: translateX(-3363px); }
+.classes-list { -webkit-transform: translateX(-3363px); -ms-transform: translateX(-3363px); transform: translateX(-3363px); }
 
 .classes .wrapper {
   width: 100%;
@@ -1017,7 +1214,9 @@ footer .wrapper { gap: 31px; }
   position: absolute;
   top: 60%;
   background-color: var(--primary-color);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .previous::before { left: 7%; }
@@ -1054,7 +1253,8 @@ footer .wrapper { gap: 31px; }
 
 .days-list {
   margin-bottom: 11px;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*=================================
   schedule styling ends here
@@ -1063,7 +1263,10 @@ footer .wrapper { gap: 31px; }
   footer styling starts here
 =================================*/
 .footer-up {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 30px;
 }
 
@@ -1087,7 +1290,7 @@ footer .wrapper { gap: 26px; }
 .send-button button { width: 100%; }
 .send-button { text-align: center; }
 .links { gap: 4px; }
-.subscribe-email { justify-content: center; }
+.subscribe-email { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 /*=================================
   footer styling ends here
 =================================*/
@@ -1108,7 +1311,7 @@ footer .wrapper { gap: 26px; }
 /*=================================
   classes styling starts here
 =================================*/
-  .classes-list { transform: translateX(-2626.5px); }
+  .classes-list { -webkit-transform: translateX(-2626.5px); -ms-transform: translateX(-2626.5px); transform: translateX(-2626.5px); }
   .classes-list img { margin: 0 23px; }
   .wrapper { width: 85%; }
   .common-div { width: 304px; }
@@ -1122,9 +1325,15 @@ footer .wrapper { gap: 26px; }
     width: 30px;
     height: 30px;
     padding: 3px 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .next::before { right: -1%; }
@@ -1159,7 +1368,7 @@ footer .wrapper { gap: 26px; }
   /*=================================
   classes styling starts here
 =================================*/
-  .classes-list {  transform: translateX(-2242px);}
+  .classes-list {  -webkit-transform: translateX(-2242px);  -ms-transform: translateX(-2242px);  transform: translateX(-2242px);}
   .common-div { width: 290px; }
   .previous::before { left: 8%; }
   .next::before { right: 0%; }
@@ -1193,12 +1402,16 @@ footer .wrapper { gap: 26px; }
     background-color: var(--primary-color);
     color: var(--secondary-color);
     cursor: pointer;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
   }
 
   .nav-list a:hover {
     border-bottom: 1.5px solid var(--secondary-color);
     cursor: pointer;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
   }
 
@@ -1206,11 +1419,15 @@ footer .wrapper { gap: 26px; }
     background-color: var(--secondary-color);
     color: var(--primary-color);
     cursor: pointer;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
   }
   .next-previous span:hover::before {
     color: var(--primary-color);
     cursor: pointer;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
   }
 
@@ -1225,6 +1442,8 @@ footer .wrapper { gap: 26px; }
     background-color: var(--secondary-color);
     color: var(--primary-color);
     cursor: pointer;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
   }
 
@@ -1232,18 +1451,24 @@ footer .wrapper { gap: 26px; }
     background-color: var(--secondary-color);
     color: var(--primary-color);
     cursor: pointer;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
   }
 
   .links a:hover {
     color: var(--secondary-color);
     cursor: pointer;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
   }
 
   .footer-down a:hover {
     color: var(--secondary-color);
     cursor: pointer;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
   }
 }
