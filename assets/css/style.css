@@ -1204,9 +1204,8 @@ footer .wrapper { gap: 26px; }
     background-color: var(--tertiary-color);
     color: #f0f8ff;
   }
-  .join-button:hover {
-    color: aliceblue;
-  }
+  
+  .join-button:hover { color: aliceblue; }
 
   .send-button button:hover {
     background-color: #f0f8ff;
