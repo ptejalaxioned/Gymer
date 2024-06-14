@@ -618,9 +618,7 @@ form {
   font-size: 10px;
 }
 
-input,textarea{
-color: #f0f8ffbd;
-}
+input,textarea{ color: #f0f8ffbd; }
 /*=================================
   contact styling ends here
 =================================*/
