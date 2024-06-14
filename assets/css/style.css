@@ -221,40 +221,31 @@ body {
   color: var(--secondary-color);
 }
 
-.first-letter-caps {
-  text-transform: capitalize;
-}
+.first-letter-caps { text-transform: capitalize; }
+.single-letter-caps::first-letter { text-transform: uppercase; }
+.all-caps { text-transform: uppercase; }
 
-.single-letter-caps::first-letter {
-  text-transform: uppercase;
-}
-
-.all-caps {
-  text-transform: uppercase;
-}
 header {
-  padding: 20px 0;
   width: 100%;
+  padding: 20px 0;
   position: absolute;
-  top: 0%;
   z-index: 4;
+  top: 0%;
 }
 
 header .wrapper {
   width: 87%;
   margin: auto;
+}
+
+.header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header a {
-  color: #f0f8ff;
-}
-
-.hamburger {
-  display: none;
-}
+header a { color: #f0f8ff; }
+.hamburger { display: none; }
 
 h1 a {
   font-size: 14px;
@@ -266,13 +257,8 @@ h1 a {
   gap: 30px;
 }
 
-.nav-list {
-  font-size: 13px;
-}
-
-.nav-list a {
-  padding: 5px 0px;
-}
+.nav-list { font-size: 13px; }
+.nav-list a { padding: 5px 0px; }
 
 .header-right a {
   padding: 6px 12px;
@@ -282,10 +268,7 @@ h1 a {
   font-size: 11px;
 }
 
-.nav-list-a-border {
-  border-bottom: 1.5px solid #f0f8ff;
-}
-
+.nav-list-a-border { border-bottom: 1.5px solid #f0f8ff; }
 /*=================================
   Header styling ends here
 =================================*/
@@ -296,17 +279,9 @@ h1 a {
 /*=================================
   banner styling starts here
 =================================*/
-.banner {
-  position: relative;
-}
-
-.banner .wrapper {
-  width: 100%;
-}
-
-.banner img {
-  width: 100%;
-}
+.banner { position: relative; }
+.banner .wrapper { width: 100%; }
+.banner img { width: 100%; }
 
 .banner-content {
   position: absolute;
@@ -325,9 +300,7 @@ h1 a {
 /*=================================
   counter styling starts here
 =================================*/
-.counter {
-  padding: 56px 0px;
-}
+.counter { padding: 56px 0px; }
 
 .counter .wrapper {
   display: flex;
@@ -338,7 +311,6 @@ h1 a {
 .counter-list {
   display: flex;
   justify-content: space-between;
-  /* gap: 65px; */
 }
 
 .counter-list li {
@@ -347,9 +319,7 @@ h1 a {
   gap: 15px;
 }
 
-.counter-list span:nth-child(0) {
-  color: var(--tertiary-color);
-}
+.counter-list span:nth-child(0) { color: var(--tertiary-color); }
 
 .icon {
   display: flex;
@@ -365,21 +335,10 @@ h1 a {
   text-indent: 0px;
 }
 
-.members::before {
-  content: "\f44b";
-}
-
-.visitors::before {
-  content: "\f206";
-}
-
-.health::before {
-  content: "\f5d1";
-}
-
-.heart::before {
-  content: "\f21e";
-}
+.members::before { content: "\f44b"; }
+.visitors::before { content: "\f206"; }
+.health::before { content: "\f5d1"; }
+.heart::before { content: "\f21e"; }
 
 .count {
   display: flex;
@@ -392,9 +351,7 @@ h1 a {
   font-weight: 600;
 }
 
-.count-down {
-  font-size: 11px;
-}
+.count-down { font-size: 11px; }
 
 .counter-down {
   display: flex;
@@ -409,9 +366,7 @@ h1 a {
   gap: 20px;
 }
 
-.counter-right img {
-  box-shadow: 7px 7px var(--tertiary-color);
-}
+.counter-right img { box-shadow: 7px 7px var(--tertiary-color); }
 
 .common-heading {
   padding-right: 20px;
@@ -440,13 +395,8 @@ h1 a {
 /*=================================
   classes styling starts here
 =================================*/
-.classes {
-  padding: 56px 0px;
-}
-
-.classes .wrapper {
-  width: 100%;
-}
+.classes { padding: 56px 0px; }
+.classes .wrapper { width: 100%; }
 
 .classes-list {
   width: 100%;
@@ -465,9 +415,7 @@ h1 a {
   gap: 17px;
 }
 
-.classes .common-div {
-  margin-left: 21%;
-}
+.classes .common-div { margin-left: 21%; }
 
 .next-previous {
   display: flex;
@@ -490,24 +438,16 @@ h1 a {
   text-indent: 0px;
 }
 
-.next-previous-onclick {
-  color: var(--tertiary-color);
-}
-.previous::before {
-  content: "\3c";
-}
-.next::before {
-  content: "\3e";
-}
+.next-previous-onclick { color: var(--tertiary-color);}
+.previous::before { content: "\3c"; }
+.next::before { content: "\3e"; }
 /*=================================
   classes styling ends here
 =================================*/
 /*=================================
   schedule styling starts here
 =================================*/
-.schedule {
-  padding: 56px 0;
-}
+.schedule { padding: 56px 0; }
 
 .days-list {
   margin: auto;
@@ -540,9 +480,7 @@ h1 a {
   display: flex;
 }
 
-.time-table li:first-child {
-  border-top: 0.5px solid #f0f8ffbd;
-}
+.time-table li:first-child { border-top: 0.5px solid #f0f8ffbd; }
 
 .program {
   width: 24.5%;
@@ -551,9 +489,7 @@ h1 a {
   border-top: none;
 }
 
-.time {
-  width: 33%;
-}
+.time { width: 33%; }
 
 .trainer {
   width: 24.5%;
@@ -579,9 +515,7 @@ h1 a {
 /*=================================
   services styling starts here
 =================================*/
-.services {
-  padding: 60px 0 67px;
-}
+.services { padding: 60px 0 67px; }
 
 .service-list {
   display: flex;
@@ -614,18 +548,10 @@ h1 a {
   text-indent: 0px;
 }
 
-.aerobics::before {
-  content: "\f21e";
-}
-.banana::before {
-  content: "\f5d1";
-}
-.gym::before {
-  content: "\f496";
-}
-.service-list h4 {
-  padding: 20px 0 13px;
-}
+.aerobics::before { content: "\f21e"; }
+.banana::before { content: "\f5d1"; }
+.gym::before { content: "\f496"; }
+.service-list h4 { padding: 20px 0 13px; }
 /*=================================
   services styling ends here
 =================================*/
@@ -637,18 +563,14 @@ h1 a {
   background-color: #121212;
 }
 
-.contact .wrapper {
-  width: 35%;
-}
+.contact .wrapper { width: 35%; }
 
 .name {
   display: flex;
   justify-content: space-between;
 }
 
-.name div {
-  width: 47.9%;
-}
+.name div { width: 47.9%; }
 
 .contact input,
 .contact textarea {
@@ -680,9 +602,8 @@ form {
   font-weight: 900;
   letter-spacing: 0.5px;
 }
-.contact p {
-  padding: 12px 0 28px;
-}
+
+.contact p { padding: 12px 0 28px; }
 /*=================================
   contact styling ends here
 =================================*/
@@ -693,9 +614,7 @@ form {
 /*=================================
   footer styling starts here
 =================================*/
-footer {
-  padding: 80px 0;
-}
+footer { padding: 80px 0; }
 
 footer .wrapper {
   display: flex;
@@ -723,12 +642,9 @@ footer p {
 
 .footer-left,
 .footer-center,
-.footer-right {
-  width: 33.3%;
-}
-.footer-center {
-  padding-left: 58px;
-}
+.footer-right { width: 33.3%; }
+
+.footer-center { padding-left: 58px; }
 
 .links {
   padding-left: 0;
@@ -750,7 +666,7 @@ footer p {
 .email-button input {
   padding: 8px;
   background-color: transparent;
-  border: 1.5px solid aliceblue;
+  border: 1.5px solid #f0f8ff;
   border-right: none;
   font-size: 11px;
 }
@@ -774,9 +690,7 @@ footer p {
   font-size: 12px;
 }
 
-.footer-down a {
-  color: var(--tertiary-color);
-}
+.footer-down a { color: var(--tertiary-color); }
 /*=================================
   footer styling ends here
 =================================*/
@@ -784,48 +698,31 @@ footer p {
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 1440px) {
-  .wrapper {
-    width: 63%;
-  }
-  .classes-list {
-    transform: translateX(-1251px);
-  }
-  .classes .common-div {
-    margin-left: 18.5%;
-  }
-  .counter-left {
-    width: 48%;
-  }
+
+  .wrapper { width: 63%; }
+  .classes-list { transform: translateX(-1251px); }
+  .classes .common-div { margin-left: 18.5%; }
+  .counter-left { width: 48%; }
+
 }
 
-/*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 1280px) {
-  .classes-list {
-    transform: translateX(-1248px);
-  }
+
+  .classes-list { transform: translateX(-1248px); }
+
 }
 
-/*media query starts*/
-/*media query for 995px starts here*/
+/*media query for 1024px starts here*/
 @media only screen and (max-width: 1024px) {
-  .classes-list {
-    transform: translateX(-1505px);
-  }
-  .wrapper {
-    width: 80%;
-  }
 
-  .classes .common-div {
-    margin-left: 10%;
-  }
+  .classes-list { transform: translateX(-1505px); }
+  .wrapper { width: 80%; }
+  .classes .common-div { margin-left: 10%; }
+  .contact .wrapper { width: 43%; }
 
-  .contact .wrapper {
-    width: 43%;
-  }
 }
 
-/*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
   /*=================================
@@ -847,11 +744,11 @@ footer p {
   }
 
   .line {
+    content: "";
+    width: 25px;
     display: flex;
     line-height: 4px;
     text-indent: -9999px;
-    content: "";
-    width: 25px;
   }
 
   .hamburger:hover .line2 {
@@ -876,19 +773,15 @@ footer p {
     border-radius: 2px;
     display: inline-block;
   }
-  .nav-list {
-    display: none;
-  }
-  h1 a {
-    padding-right: 745px;
-  }
+
+  .nav-list { display: none; }
 
   .nav-list {
     width: 100%;
     height: 100vh;
     display: none;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     position: absolute;
     z-index: 10;
     top: 100%;
@@ -899,9 +792,8 @@ footer p {
     text-align: center;
   }
 
-  .nav-list a {
-    color: #48d494;
-  }
+  .nav-list a { color: #48d494; }
+
   .nav-list a:hover {
     color: #f0f8ff;
     cursor: pointer;
@@ -910,6 +802,12 @@ footer p {
 
   header .wrapper {
     width: 94%;
+    display: flex;
+  }
+
+  .header-content {
+    width: 100%;
+    justify-content: space-between;
   }
   /*=================================
   Header styling ends here
@@ -917,330 +815,295 @@ footer p {
   /*=================================
   banner styling starts here
 =================================*/
-  .banner-content {
-    font-size: 50px;
-  }
-
-  .wrapper {
-    width: 80%;
-  }
+  .banner-content { font-size: 50px; }
+  .wrapper { width: 80%; }
   /*=================================
   banner styling ends here
 =================================*/
   /*=================================
   counter styling starts here
 =================================*/
-  .counter-left {
-    width: 44%;
-  }
+  .counter-left { width: 44%; }
   /*=================================
   counter styling ends here
 =================================*/
   /*=================================
   classes styling starts here
 =================================*/
-  .classes-list {
-    transform: translateX(-918px);
-  }
-  .classes-list img {
-    width: 239px;
-  }
+  .classes-list { transform: translateX(-918px); }
+  .classes-list img { width: 239px; }
   /*=================================
   classes styling ends here
 =================================*/
 }
 
-/*media query starts*/
 /*media query for 768px starts here*/
 @media only screen and (max-width: 768px) {
-  h1 a {
-    padding-right: 517px;
-  }
-
-  .contact .wrapper {
-    width: 56%;
-  }
-
-  footer .wrapper {
-    gap: 61px;
-  }
-
-  .classes-list {
-    transform: translateX(-1144px);
-  }
-
-  .footer-center {
-    padding-left: 42px;
-  }
-  .counter-right img {
-    width: 100%;
-  }
-  .counter-right {
-    width: 50%;
-  }
+/*=================================
+ counter styling starts here
+=================================*/
+.counter-right img { width: 100%; }
+.counter-right { width: 50%; }
+/*=================================
+ counter styling ends here
+=================================*/
+/*=================================
+ contact styling starts here
+=================================*/
+.contact .wrapper { width: 56%; }
+/*=================================
+ contact  styling ends here
+=================================*/
+/*=================================
+  classes styling starts here
+=================================*/
+.classes-list { transform: translateX(-1144px); }
+/*=================================
+footer styling starts here
+=================================*/
+.footer-center { padding-left: 42px; }
+footer .wrapper { gap: 61px; }
+/*=================================
+  footer styling ends here
+=================================*/
 }
-/*media query starts*/
-/*media query for 768px starts here*/
+
+/*media query for 640px starts here*/
 @media only screen and (max-width: 640px) {
-  h1 a {
-    padding-right: 426px;
-  }
-  .classes-list {
-    transform: translateX(-1273px);
-  }
+/*=================================
+  classes styling starts here
+=================================*/
+.wrapper { width: 90%; }
+.classes-list { transform: translateX(-1273px); }
 
-  .wrapper {
-    width: 90%;
-  }
-  .contact,
-  .services,
-  .schedule,
-  .classes {
-    padding: 38px 0 55px;
-  }
-
-  .footer-center {
-    padding-left: 0;
-  }
-
-  .footer-up {
-    width: 100%;
-  }
-  .footer-center {
-    width: 20%;
-  }
-
-  .email-button input {
-    width: 100%;
-  }
-
-  footer {
-    padding: 50px 0 30px;
-  }
-  footer .wrapper {
-    gap: 31px;
-  }
+.contact,
+.services,
+.schedule,
+.classes { padding: 38px 0 55px; }
+/*=================================
+  classes styling ends here
+=================================*/
+/*=================================
+  footer styling starts here
+=================================*/
+.footer-center { padding-left: 0; }
+.footer-up { width: 100%; }
+.footer-center { width: 20%; }
+.email-button input { width: 100%; }
+footer { padding: 50px 0 30px; }
+footer .wrapper { gap: 31px; }
+/*=================================
+  footer styling ends here
+=================================*/
 }
 
-/*media query starts*/
 /*media query for 768px starts here*/
 @media only screen and (max-width: 480px) {
-  .wrapper {
-    width: 80%;
-  }
+  /*=================================
+  banner styling starts here
+=================================*/
+.wrapper { width: 80%; }
 
-  .service-list {
-    flex-direction: column;
-    align-items: center;
-    gap: 19px;
-    text-align: center;
-  }
-
-  .service-list span {
-    justify-content: center;
-  }
-
-  h1 a {
-    padding-right: 292px;
-  }
-
-  .banner-content {
-    width: 90%;
-    font-size: 50px;
-  }
-
-  .banner img {
-    height: 94vh;
-    object-fit: cover;
-  }
-
-  .service-list li {
-    width: 90%;
-  }
-
-  .footer-up {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .counter {
-    padding: 30px 0px 60px;
-  }
-  .counter-left {
-    padding-top: 10px;
-  }
-  .counter-left {
-    gap: 9px;
-  }
-  .counter-left p {
-    margin-bottom: 10px;
-  }
-
-  .counter-down {
-    flex-direction: column;
-    gap: 35px;
-  }
-
-  .classes-list img {
-    width: 319.8px;
-    margin: 0 80.2px;
-  }
-
-  .counter-list {
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-  }
-
-  .classes-list {
-    transform: translateX(-3363px);
-  }
-
-  .classes .wrapper {
-    width: 100%;
-    position: relative;
-  }
-
-  .next-previous span::before {
-    padding: 10px 12px;
-    padding-top: 0;
-    border-radius: 21px;
-    position: absolute;
-    top: 60%;
-    background-color: #48d494;
-    transform: translate(-50%, -50%);
-  }
-
-  .previous::before {
-    left: 7%;
-  }
-  .next::before {
-    right: 0%;
-  }
-  .common-heading,
-  .common-para,
-  .get-in-touch {
-    text-align: center;
-  }
-  .common-heading {
-    padding-right: 0;
-  }
-  .icon::before {
-    font-size: 35px;
-  }
-  .count-up {
-    font-size: 33px;
-  }
-  .count-down {
-    font-size: 14px;
-  }
-  .counter .wrapper {
-    gap: 30px;
-  }
-
-  .common-div {
-    padding-bottom: 30px;
-    gap: 10px;
-  }
-
-  .counter-left,
-  .counter-right {
-    width: 100%;
-  }
-  .counter-left a {
-    width: 100%;
-  }
-  .contact,
-  .services,
-  .schedule,
-  .classes {
-    padding: 38px 0 48px;
-  }
-  .classes {
-    padding: 38px 0 25 px;
-  }
-  .schedule .common-div {
-    padding-bottom: 17px;
-  }
-  .health::before {
-    padding-left: 9px;
-  }
-  .heart::before {
-    padding-left: 7px;
-  }
-
-  .counter-list li {
-    width: 40%;
-    gap: 15px;
-  }
-
-  .icon {
-    width: 26%;
-  }
-  .classes .common-div {
-    margin: auto;
-  }
-  .table-data {
-    padding: 12px 6px;
-  }
-  .days-list a {
-    padding: 11px 9px;
-  }
-  .days-list {
-    margin-bottom: 11px;
-    flex-wrap: wrap;
-  }
-
-  .service-list li {
-    width: 90%;
-    margin: auto;
-  }
-
-  .contact .wrapper {
-    width: 75%;
-  }
-  .send-button button {
-    width: 100%;
-  }
-  .send-button {
-    text-align: center;
-  }
-  .links {
-    gap: 4px;
-  }
-
-  footer h5 {
-    margin-bottom: 10px;
-    font-size: 11px;
-  }
-
-  .footer-left,
-  .footer-center,
-  .footer-right {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-  }
-
-  footer .wrapper {
-    gap: 26px;
-}
-  .footer-down span {
-
-    display: inline;
-  }
-
-  .subscribe-email {
-    justify-content: center;
+.banner-content {
+  width: 90%;
+  font-size: 50px;
 }
 
-footer p {
-  padding: 0 35px;
+.banner img {
+  height: 94vh;
+  object-fit: cover;
 }
+/*=================================
+  banner styling ends here
+=================================*/
+/*=================================
+  service styling starts here
+=================================*/
+.service-list {
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+  text-align: center;
+}
+
+.service-list span { justify-content: center; }
+.service-list li { width: 90%; }
+
+.service-list li {
+  width: 90%;
+  margin: auto;
+}
+/*=================================
+  service styling ends here
+=================================*/
+/*=================================
+  counter styling starts here
+=================================*/
+.counter { padding: 30px 0 60px; }
+.counter-left { padding-top: 10px; }
+.counter-left { gap: 9px; }
+.counter-left p { margin-bottom: 10px; }
+
+.counter-down {
+  flex-direction: column;
+  gap: 35px;
+}
+
+.counter-list {
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.common-heading,
+.common-para,
+.get-in-touch { text-align: center; }
+
+.common-heading { padding-right: 0; }
+.icon::before { font-size: 35px; }
+.count-up { font-size: 33px; }
+.count-down { font-size: 14px; }
+.counter .wrapper { gap: 30px; }
+
+.counter-left,
+.counter-right {width: 100%; }
+
+.counter-left a { width: 100%; }
+.health::before { padding-left: 9px; }
+.heart::before { padding-left: 7px; }
+
+.counter-list li {
+  width: 40%;
+  gap: 15px;
+}
+
+.icon { width: 26%; }
+/*=================================
+  counter styling ends here
+=================================*/
+/*=================================
+  classes styling starts here
+=================================*/
+.classes-list img {
+  width: 319.8px;
+  margin: 0 80.2px;
+}
+
+.classes-list { transform: translateX(-3363px); }
+
+.classes .wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.next-previous span::before {
+  padding: 10px 12px;
+  padding-top: 0;
+  border-radius: 21px;
+  position: absolute;
+  top: 60%;
+  background-color: #48d494;
+  transform: translate(-50%, -50%);
+}
+
+.previous::before { left: 7%; }
+.next::before { right: 0%; }
+
+.common-div {
+  padding-bottom: 30px;
+  gap: 10px;
+}
+
+.contact,
+.services,
+.schedule,
+.classes { padding: 38px 0 48px; }
+
+.classes { padding: 38px 0 25px; }
+.classes .common-div { margin: auto; }
+/*=================================
+  classes styling ends here
+=================================*/
+/*=================================
+  contact styling starts here
+=================================*/
+.contact .wrapper { width: 75%; }
+/*=================================
+ contact styling ends here
+=================================*/
+/*=================================
+  schedule styling starts here
+=================================*/
+.schedule .common-div { padding-bottom: 17px; }
+.table-data { padding: 12px 6px; }
+.days-list a { padding: 11px 9px; }
+
+.days-list {
+  margin-bottom: 11px;
+  flex-wrap: wrap;
+}
+/*=================================
+  schedule styling ends here
+=================================*/
+/*=================================
+  footer styling starts here
+=================================*/
+.footer-up {
+  flex-direction: column;
+  gap: 30px;
+}
+
+footer p {  padding: 0 35px; } 
+
+footer h5 {
+  margin-bottom: 10px;
+  font-size: 11px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+footer .wrapper { gap: 26px; }
+.footer-down span { display: inline; }
+.send-button button { width: 100%; }
+.send-button { text-align: center; }
+.links { gap: 4px; }
+.subscribe-email { justify-content: center; }
+/*=================================
+  footer styling ends here
+=================================*/
 }
 
 /*media query for 375px starts here*/
 @media only screen and (max-width: 375px) {
+/*=================================
+  counter styling starts here
+=================================*/
+  .counter-list li {
+    width: 51%;
+    gap: 12px;
+  }
+/*=================================
+  counter styling ends here
+=================================*/
+/*=================================
+  classes styling starts here
+=================================*/
+  .classes-list { transform: translateX(-2626.5px); }
+  .classes-list img { margin: 0 23px; }
+  .wrapper { width: 85%; }
+  .common-div { width: 304px; }
+
+  .classes-list img {
+    width: 290px;
+    margin: 0 42.5px;
+  }
+
   .next-previous span::before {
     width: 30px;
     height: 30px;
@@ -1250,94 +1113,66 @@ footer p {
     justify-content: center;
   }
 
-  .counter-list li {
-    width: 51%;
-    gap: 12px;
-}
+  .next::before { right: -1%; }
+  .previous::before { left: 6%; }
+/*=================================
+  classes styling ends here
+=================================*/
+/*=================================
+  schedule styling starts here
+=================================*/
+  .schedule .wrapper { width: 90%; }
 
-.classes-list {
-  transform: translateX(-2626.5px);
-}
-.classes-list img {
-  margin: 0 23px;
-}
-h1 a {
-  padding-right: 200px;
-}
-.wrapper {
-  width: 85%;
-}
-.common-div {
-  width: 304px;
-}
-
-.classes-list img {
-  width: 290px;
-  margin: 0 42.5px;
-}
-
-.next::before {
-  right: -1%;
-}
-.previous::before {
-  left: 6%;
-}
-
-.schedule .wrapper {
-  width: 90%;
-}
-
-.schedule .common-div {
-  padding-bottom: 10px;
-  margin: auto;
-}
-
-.footer-down{
-text-align: center;
-}
-.footer-down span {
-  padding: 0;
-}
+  .schedule .common-div {
+    padding-bottom: 10px;
+    margin: auto;
+  }
+ /*=================================
+  schedule styling ends here
+=================================*/ 
+/*=================================
+  footer styling starts here
+=================================*/
+  .footer-down { text-align: center; }
+  .footer-down span { padding: 0; }
+/*=================================
+  footer styling ends here
+=================================*/
 }
 
 /*media query for 320px starts here*/
 @media only screen and (max-width: 320px) {
-h1 a {
-  padding-right: 134px;
-}
-.classes-list {
-  transform: translateX(-2242px);
+  /*=================================
+  classes styling starts here
+=================================*/
+  .classes-list {  transform: translateX(-2242px);}
+  .common-div { width: 290px; }
+  .previous::before { left: 8%; }
+  .next::before { right: 0%; }
+  .next-previous span::before { top: 65%; }
+
+  .classes-list img {
+    width: 220px;
+    margin: 0 50.1px;
+  }
+
+  .next-previous span::before { top: 63%; }
+/*=================================
+  classes styling ends here
+=================================*/
+/*=================================
+  counter styling starts here
+=================================*/
+  .counter-list li {
+    width: 59%;
+    gap: 12px;
+  }
+  /*=================================
+  counter styling ends here
+=================================*/
 }
 
-.common-div {
-  width: 290px;
-}
 
-.previous::before {
-  left: 8%;
-}
-
-.next::before {
-  right: 0%;
-}
-
-.next-previous span::before {
-  top: 65%;
-}
-
-.classes-list img {
-  width: 220px;
-  margin: 0 50.1px;
-}
-.next-previous span::before {
-  top: 63%;
-}
-.counter-list li {
-  width: 59%;
-  gap: 12px;
-}
-}
-/*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (min-width: 996px) {
   .header-right a:hover {
