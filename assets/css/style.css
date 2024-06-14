@@ -211,14 +211,13 @@ li {
   Header styling starts here
 =================================*/
 :root {
-  --primary-color: #000;
-  --secondary-color: #f0f8ff8f;
-  --tertiary-color: #48d494;
+  --primary-color:#48d494;
+  --secondary-color:#f0f8ff ;
 }
 
 body {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: #000;
+  color: #f0f8ff8f;
 }
 
 .first-letter-caps { text-transform: capitalize; }
@@ -244,7 +243,7 @@ header .wrapper {
   justify-content: space-between;
 }
 
-header a { color: #f0f8ff; }
+header a { color: var(--secondary-color); }
 .hamburger { display: none; }
 
 h1 a {
@@ -262,13 +261,13 @@ h1 a {
 
 .header-right a {
   padding: 6px 12px;
-  border: 0.5px solid var(--tertiary-color);
+  border: 0.5px solid var(--primary-color);
   border-radius: 3px;
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   font-size: 11px;
 }
 
-.nav-list-a-border { border-bottom: 1.5px solid #f0f8ff; }
+.nav-list-a-border { border-bottom: 1.5px solid  var(--secondary-color); }
 /*=================================
   Header styling ends here
 =================================*/
@@ -288,7 +287,7 @@ h1 a {
   z-index: 2;
   left: 50%;
   top: 50%;
-  color: #f0f8ff;
+  color:  var(--secondary-color);
   font-size: 75px;
   font-weight: 900;
   text-align: center;
@@ -319,7 +318,7 @@ h1 a {
   gap: 15px;
 }
 
-.counter-list span:nth-child(0) { color: var(--tertiary-color); }
+.counter-list span:nth-child(0) { color:var(--primary-color); }
 
 .icon {
   display: flex;
@@ -346,7 +345,7 @@ h1 a {
 }
 
 .count-up {
-  color: #f0f8ff;
+  color: var(--secondary-color);
   font-size: 30px;
   font-weight: 600;
 }
@@ -366,11 +365,11 @@ h1 a {
   gap: 20px;
 }
 
-.counter-right img { box-shadow: 7px 7px var(--tertiary-color); }
+.counter-right img { box-shadow: 7px 7px var(--primary-color) }
 
 .common-heading {
   padding-right: 20px;
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   font-size: 33px;
   font-weight: 900;
 }
@@ -383,8 +382,8 @@ h1 a {
 .counter-left a {
   padding: 13px 16px;
   border-radius: 3px;
-  background-color: var(--tertiary-color);
-  color: var(--primary-color);
+  background-color:var(--primary-color);
+  color: #000;
   font-size: 8.5px;
   font-weight: 900;
   letter-spacing: 0.5px;
@@ -438,7 +437,7 @@ h1 a {
   text-indent: 0px;
 }
 
-.next-previous-onclick { color: var(--tertiary-color);}
+.next-previous-onclick { color: var(--primary-color);}
 .previous::before { content: "\3c"; }
 .next::before { content: "\3e"; }
 /*=================================
@@ -459,13 +458,13 @@ h1 a {
 .days-list a {
   padding: 11px 13px;
   border-radius: 3px;
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   font-size: 12px;
 }
 
 .day-onclick {
-  background-color: var(--tertiary-color);
-  color: #f0f8ff;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .time-table {
@@ -506,7 +505,7 @@ h1 a {
 
 .join-button {
   width: 18%;
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   text-align: center;
 }
 /*=================================
@@ -527,8 +526,8 @@ h1 a {
   padding: 35px 35px;
   display: flex;
   flex-direction: column;
-  background-color: var(--tertiary-color);
-  color: #f0f8ff;
+  background-color:var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .service-list p {
@@ -576,7 +575,7 @@ h1 a {
 .contact textarea {
   width: 100%;
   padding: 8px;
-  border: 1.5px solid aliceblue;
+  border: 1.5px solid var(--secondary-color);
   background-color: transparent;
   font-size: 11px;
 }
@@ -596,8 +595,8 @@ form {
   padding: 13px 68px;
   border: none;
   border-radius: 3px;
-  background-color: var(--tertiary-color);
-  color: var(--primary-color);
+  background-color:var(--primary-color);
+  color: #000 ;
   font-size: 8.5px;
   font-weight: 900;
   letter-spacing: 0.5px;
@@ -629,7 +628,7 @@ footer .wrapper {
 
 footer h5 {
   margin-bottom: 15px;
-  color: aliceblue;
+  color: var(--secondary-color);
   font-size: 10px;
   font-weight: 900;
   letter-spacing: 1px;
@@ -654,7 +653,7 @@ footer p {
 }
 
 .links a {
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   font-size: 12px;
 }
 
@@ -666,7 +665,7 @@ footer p {
 .email-button input {
   padding: 8px;
   background-color: transparent;
-  border: 1.5px solid #f0f8ff;
+  border: 1.5px solid var(--secondary-color);
   border-right: none;
   font-size: 11px;
 }
@@ -676,8 +675,8 @@ footer p {
   border: none;
   border-bottom-right-radius: 1px;
   border-top-right-radius: 1px;
-  background-color: var(--tertiary-color);
-  color: var(--primary-color);
+  background-color:var(--primary-color);
+  color: #000;
   font-size: 8px;
   font-weight: bolder;
   letter-spacing: 0.5px;
@@ -690,7 +689,7 @@ footer p {
   font-size: 12px;
 }
 
-.footer-down a { color: var(--tertiary-color); }
+.footer-down a { color: var(--primary-color);}
 /*=================================
   footer styling ends here
 =================================*/
@@ -769,7 +768,7 @@ footer p {
   .line::before {
     content: "";
     width: 17px;
-    border-bottom: 3px solid var(--secondary-color);
+    border-bottom: 3px solid #f0f8ff8f;
     border-radius: 2px;
     display: inline-block;
   }
@@ -792,10 +791,10 @@ footer p {
     text-align: center;
   }
 
-  .nav-list a { color: #48d494; }
+  .nav-list a { color: var(--primary-color) ; }
 
   .nav-list a:hover {
-    color: #f0f8ff;
+    color: var(--secondary-color);
     cursor: pointer;
     transition: all 1s;
   }
@@ -1002,7 +1001,7 @@ footer .wrapper { gap: 31px; }
   border-radius: 21px;
   position: absolute;
   top: 60%;
-  background-color: #48d494;
+  background-color: var(--primary-color);
   transform: translate(-50%, -50%);
 }
 
@@ -1176,59 +1175,59 @@ footer .wrapper { gap: 26px; }
 /*media query for 995px starts here*/
 @media only screen and (min-width: 996px) {
   .header-right a:hover {
-    background-color: #48d494;
-    color: #f0f8ff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     cursor: pointer;
     transition: all 1s;
   }
 
   .nav-list a:hover {
-    border-bottom: 1.5px solid #f0f8ff;
+    border-bottom: 1.5px solid var(--secondary-color);
     cursor: pointer;
     transition: all 1s;
   }
 
   .counter-left a:hover {
-    background-color: #f0f8ff;
-    color: #48d494;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     cursor: pointer;
     transition: all 1s;
   }
   .next-previous span:hover::before {
-    color: #48d494;
+    color: var(--primary-color);
     cursor: pointer;
     transition: all 1s;
   }
 
   .days-list a:hover {
-    background-color: var(--tertiary-color);
-    color: #f0f8ff;
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
   }
-  
-  .join-button:hover { color: aliceblue; }
+
+  .join-button:hover { color: var(--secondary-color); }
 
   .send-button button:hover {
-    background-color: #f0f8ff;
-    color: #48d494;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     cursor: pointer;
     transition: all 1s;
   }
 
   .subscribe-email button:hover {
-    background-color: #f0f8ff;
-    color: #48d494;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     cursor: pointer;
     transition: all 1s;
   }
 
   .links a:hover {
-    color: #f0f8ff;
+    color: var(--secondary-color);
     cursor: pointer;
     transition: all 1s;
   }
 
   .footer-down a:hover {
-    color: #f0f8ff;
+    color: var(--secondary-color);
     cursor: pointer;
     transition: all 1s;
   }
